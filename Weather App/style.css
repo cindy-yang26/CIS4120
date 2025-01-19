@@ -29,7 +29,8 @@ border-radius: 40px;
 
 .top-bar {
 padding-top: 15px;
-padding-left: 35px;
+padding-left: 30px;
+padding-right: 10px;
 }
 
 #time {
