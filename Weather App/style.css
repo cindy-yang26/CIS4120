@@ -99,7 +99,15 @@ padding-left: 3px;
     display: flex;
 }
 
-.left-side {
+.left-side-philly {
+    text-align: center;
+    width: 50%;
+    height: auto;
+    padding-top: 15px;
+}
+
+.left-side-miami {
+    display: none;
     text-align: center;
     width: 50%;
     height: auto;
@@ -117,7 +125,7 @@ padding-left: 3px;
     font-family: 'Times New Roman', serif;
 }
 
-.right-side {
+.right-side-philly, .right-side-miami {
     width: 45%;
     background-color: #87B6E2;
     height: 245px;
@@ -128,7 +136,11 @@ padding-left: 3px;
     overflow: scroll;
 }
 
-.right-side span {
+.right-side-miami {
+    display: none;
+}
+
+.right-side-philly span, .right-side-miami span {
     display: inline-flex;
     justify-content: space-evenly;
     width: 100%;
@@ -195,7 +207,7 @@ padding-left: 3px;
 }
 
 /* ********* Bottom Half ********* */
-.bottom-div {
+.bottom-div-philly, .bottom-div-miami {
     background-color: #87B6E2;
     margin: 0 15px 20px 15px;
     height: 230px;
@@ -204,7 +216,11 @@ padding-left: 3px;
     text-align: center;
 }
 
-.bottom-div span {
+.bottom-div-miami {
+    display: none;
+}
+
+.bottom-div-philly span, .bottom-div-miami span {
     display: inline-flex;
     justify-content: space-evenly;
     width: 95%;
@@ -243,4 +259,33 @@ padding-left: 3px;
     height: 5px;
     background-color: white;
     border-radius: 10px;
+}
+
+/* ********* Menu Bar ********* */
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    width: 130px;
+    height: 100px;
+    left: 180px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-bottom-left-radius: 8px;
+}
+
+.menu-dropdown button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    color: #1E1E1E;
+    background-color: #e8e8e8;
+}
+
+.menu-dropdown button:hover {
+    background-color: #ccc7c7ef;
 }

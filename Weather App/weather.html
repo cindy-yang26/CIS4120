@@ -25,17 +25,20 @@
             <div class="location-spacer"></div>
             <div class="location">
                 <i class="fa-solid fa-location-dot"></i>
-                Philadelphia
+                <span class="location-name">Philadelphia</span>
             </div>
             <div class="menu-icon">
-                <button id="menu-button">
+                <button id="menu-button" onclick="toggleMenu()">
                     <i class="fa-solid fa-bars"></i>
                 </button>
+                <div class="menu-dropdown">
+                    <button id="menu-location" onclick="toggleCity()">New York</button>
+                </div>
             </div>
         </div>
 
         <div class="top-div">
-            <div class="left-side">
+            <div class="left-side-philly">
                 <div class="feels-like">
                     <span>Feels like</span>
                     <span id="feels-like-temp">30<sup style="font-size: 0.6em">o</sup></span>
@@ -58,7 +61,29 @@
                     </div>
                 </div>
             </div>
-            <div class="right-side">
+            <div class="left-side-miami">
+                <div class="feels-like">
+                    <span>Feels like</span>
+                    <span id="feels-like-temp">79<sup style="font-size: 0.6em">o</sup></span>
+                    <span style="font-size: 1.2em;">MOSTLY SUNNY</span>
+                    <span style="padding-bottom: 3px;">
+                        H: 81<sup style="font-size: 0.7em">o</sup> 
+                        <span style="display: inline-block; margin: 0 5px"></span>
+                        L: 69<sup style="font-size: 0.7em">o</sup>
+                    </span>
+                </div>
+                <div class="precipitation">
+                    <div class="precip-left">
+                        <img src="raindrop.png" id="raindrop-icon">
+                        <!-- <span id="precip-time">9<span style="font-size: 0.8em;">PM</span></span> -->
+                    </div>
+                    <div class="precip-right">
+                        <span style="font-size: 1.1em;">No rain</span>
+                        <span style="font-size: 1.1em;">today!</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side-philly">
                 <span>
                     <span>Now</span>
                     <img src="sun.png" id="sun-icon">
@@ -125,9 +150,76 @@
                     <span>24<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
                 </span>
             </div>
+            <div class="right-side-miami">
+                <span>
+                    <span>Now</span>
+                    <img src="sun.png" id="sun-icon">
+                    <span>77<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+                </span>
+                <span>
+                    <span>3PM</span>
+                    <img src="sun.png" id="sun-icon">
+                    <span>79<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+                </span>
+                <span>
+                    <span>4PM</span>
+                    <img src="sun.png" id="sun-icon">
+                    <span>81<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+                </span>
+                <span>
+                    <span>5PM</span>
+                    <img src="sun.png" id="sun-icon">
+                    <span>81<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+                </span>
+                <span>
+                    <span>6PM</span>
+                    <img src="sun.png" id="sun-icon">
+                    <span>76<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+                </span>
+                <span>
+                    <span>7PM</span>
+                    <img src="cloud.png" id="cloud-icon">
+                    <span>74<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+                </span>
+                <span>
+                    <span>8PM</span>
+                    <img src="cloud.png" id="cloud-icon">
+                    <span>73<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+                </span>
+                <span>
+                    <span>9PM</span>
+                    <img src="cloud.png" id="cloud-icon">
+                    <span>71<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+                </span>
+                <span>
+                    <span>10PM</span>
+                    <img src="cloud.png" id="cloud-icon">
+                    <span>71<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+                </span>
+                <span>
+                    <span>11PM</span>
+                    <img src="cloud.png" id="cloud-icon">
+                    <span>70<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+                </span>
+                <span>
+                    <span>12AM</span>
+                    <img src="cloud.png" id="cloud-icon">
+                    <span>69<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+                </span>
+                <span>
+                    <span>1AM</span>
+                    <img src="cloud.png" id="cloud-icon">
+                    <span>68<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+                </span>
+                <span>
+                    <span>2AM</span>
+                    <img src="cloud.png" id="cloud-icon">
+                    <span>66<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+                </span>
+            </div>
         </div>
 
-        <div class="bottom-div">
+        <div class="bottom-div-philly">
             <span>
                 <span>40<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
                 <span id="days">Today</span>
@@ -177,12 +269,65 @@
                 <span style="border: none;">11<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
             </span>
         </div>
+        <div class="bottom-div-miami">
+            <span>
+                <span>81<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+                <span id="days">Today</span>
+                <img src="sun.png" id="small-sun-icon">
+                <span>69<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+            </span>
+            <span>
+                <span>75<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+                <span id="days">Fri</span>
+                <img src="sun.png" id="small-sun-icon">
+                <span>61<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+            </span>
+            <span>
+                <span>76<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+                <span id="days">Sat</span>
+                <img src="sun.png" id="small-sun-icon">
+                <span>66<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+            </span>
+            <span>
+                <span>70<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+                <span id="days">Sun</span>
+                <img src="rain.png" id="small-rain-icon">
+                <span>60<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+            </span>
+            <span>
+                <span>70<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+                <span id="days">Mon</span>
+                <img src="cloud.png" id="small-cloud-icon">
+                <span>52<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+            </span>
+            <span>
+                <span>63<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+                <span id="days">Tues</span>
+                <img src="sun.png" id="small-sun-icon">
+                <span>47<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+            </span>
+            <span>
+                <span>69<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+                <span id="days">Wed</span>
+                <img src="sun.png" id="small-sun-icon">
+                <span>45<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+            </span>
+            <span style="border: none;">
+                <span style="border: none;">73<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+                <span id="days" style="border: none">Thurs</span>
+                <img src="cloud.png" id="small-cloud-icon">
+                <span style="border: none;">63<sup style="font-size: 0.7em; vertical-align: top; position: relative; top: -0.5em;">o</sup></span>
+            </span>
+        </div>
 
         <div class="home-bar">
             <div class="bar"></div>
         </div>
       </div>
     </div>
+
+    <script src="weather.js"></script>
+
   </body>
 
 </html>
