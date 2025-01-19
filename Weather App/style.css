@@ -1,0 +1,232 @@
+/* ********* Phone Outline + Top Bar ********* */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+  
+.phone-container {
+position: relative;
+width: 330px;
+height: 660px;
+background-color: #000000;
+border-radius: 50px;
+border: 4px solid #ccc;
+}
+
+.phone-screen {
+position: absolute;
+top: 10px;
+left: 10px;
+width: 310px;
+height: 640px;
+background-color: #649ed5;
+border-radius: 40px;
+}
+
+.top-bar {
+padding-top: 15px;
+padding-left: 35px;
+}
+
+#time {
+color: white;
+width: 20%;
+padding-right: 25px;
+}
+
+#camera-bar {
+width: 120px;
+height: 30px;
+margin-bottom: -10px;
+display: inline-block;
+background-color: black;
+border-radius: 50px;
+margin-right: 10px;
+}
+
+.fa-signal, .fa-wifi, .fa-battery-full {
+color: white;
+font-size: 0.8em;
+padding-left: 3px;
+}
+
+/* ********* Location and Navbar ********* */
+.location-div {
+    width: 100%;
+    height: auto;
+    font-size: 1.1em;
+    margin-top: 15px;
+    display: inline-flex;
+}
+
+.location-spacer {
+    width: 20%;
+}
+
+.location {
+    margin: auto;
+    text-align: center;
+    width: 60%;
+    color: black;
+    font-family: Verdana, sans-serif;
+}
+
+.menu-icon {
+    margin: auto;
+    text-align: center;
+    width: 20%;
+}
+
+.fa-bars {
+    font-size: 1.2em;
+}
+
+#menu-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* ********* Top Half ********* */
+.top-div {
+    width: 100%;
+    height: 295px;
+    display: flex;
+}
+
+.left-side {
+    text-align: center;
+    width: 50%;
+    height: auto;
+    padding-top: 15px;
+}
+
+.feels-like span {
+    display: block;
+    color: white;
+}
+
+#feels-like-temp {
+    font-size: 5em;
+    margin-top: -5px;
+    font-family: 'Times New Roman', serif;
+}
+
+.right-side {
+    width: 45%;
+    background-color: #87B6E2;
+    height: 245px;
+    border-radius: 15px;
+    margin: 20px 15px 0 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow: scroll;
+}
+
+.right-side span {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 100%;
+    color: #1E1E1E;
+    font-weight: bold;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+}
+
+#sun-icon {
+    width: 25px;
+    height: 25px;
+}
+
+#cloud-icon {
+    width: 25px;
+    height: 19px;
+}
+
+#rain-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.precipitation {
+    height: 90px;
+    padding-top: 25px;
+    justify-content: left;
+    display: flex;
+    position: relative;
+}
+
+.precip-left {
+    display: inline-block;
+    width: 60%;
+}
+
+#precip-time {
+    position: absolute;
+    top: 58px;
+    left: 23px;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #1A3454;
+}
+
+#raindrop-icon {
+    width: 80px;
+    height: auto;
+}
+
+.precip-right {
+    display: inline-block;
+    width: 50%;
+    height: 100px;
+    padding-top: 15px;
+    margin-left: -19px;
+}
+
+.precip-right span {
+    display: inline-block;
+    color: #1A3454;
+}
+
+/* ********* Bottom Half ********* */
+
+.bottom-div {
+    background-color: #87B6E2;
+    margin: 0 15px 20px 15px;
+    height: 230px;
+    border-radius: 15px;
+    overflow: scroll;
+    text-align: center;
+}
+
+.bottom-div span {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 95%;
+    color: #1E1E1E;
+    font-weight: bold;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #1E1E1E;
+    font-size: 1.2em;
+}
+
+#days {
+    font-size: 1em;
+}
+
+#small-sun-icon, #small-rain-icon {
+    width: 20px;
+    height: 20px;
+}
+
+#small-cloud-icon {
+    width: 20px;
+    height: 16px;
+}
