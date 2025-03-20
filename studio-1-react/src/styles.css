@@ -1,0 +1,72 @@
+p {
+  line-height: 30px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 2px;
+}
+
+h1 {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 36px;
+  color: #ffffff;
+}
+  
+a {
+  color: #ffffff;
+}
+
+button {
+  border: none;
+  color: white;
+  background-color: black;
+  font-family: inherit;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+  
+body {
+  background-color: #000000;
+  display: block;
+  justify-content: center;
+  align-items: center;    
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+#text-div {
+  width: 400px;
+  margin-right: 100px;
+}
+
+#work-div {
+  display: block;
+}
+
+.home-image {
+  height: 400px
+}
+  
+nav {
+  display: flex;
+  padding: 15px;
+  font-size: 1.4em;
+  margin-bottom: 80px;
+}
+
+#about-link {
+  padding-left: 25px;
+}
+
+#home-link, #about-link {
+  text-decoration: none;
+}
