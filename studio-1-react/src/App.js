@@ -19,7 +19,7 @@ const App = () => {
     </h1>
     <p>
         Hi there! My name is Cindy, and I am a student at Penn. I am passionate about product development.
-        More about me <a href="/about.html">here</a>.
+        More about me <button id="here" onClick={goAbout}>here</button>.
     </p>
     <p>
         I enjoy swimming and baking.
